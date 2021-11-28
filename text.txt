@@ -1,0 +1,24 @@
+//Insert Command
+POST http://localhost:5000/students HTTP/1.1
+content-type: application/json
+
+{
+    "roll_no": 4,
+    "name": "Jatin"
+}
+
+//Display Command
+GET http://localhost:5000/students HTTP/1.1
+GET http://localhost:5000/students/4 HTTP/1.1
+
+
+//Update Command
+PUT http://localhost:5000/students/4 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Jatin Singh"
+}
+
+//Delete Command
+DELETE http://localhost:5000/students/4 HTTP/1.1

@@ -1,0 +1,6 @@
+CREATE DATABASE class;
+
+CREATE TABLE students(
+  roll_no SERIAL PRIMARY KEY,
+  name VARCHAR(100)
+);
